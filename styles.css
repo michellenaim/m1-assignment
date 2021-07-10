@@ -1,3 +1,5 @@
+/* Header */
+
 header {
   width: 100%;
   min-height: 400px;
@@ -21,7 +23,7 @@ header {
 
 .main-header {
   background-color: #ecf0f1;
-  width: 627px;
+  width: 626.5px;
   margin: -2em auto 0 auto;
   min-height: 100px;
   height: 100px;
@@ -64,3 +66,68 @@ header {
   .main-menu ul li.active a {
     color: #fff;
   }
+
+  /* Main */
+
+  .main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .main h2 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    color: #0c4f7d;
+  }
+  .main h3 {
+    font-size: 1.7em;
+  }
+
+  /* Footer */
+footer {
+  width: 100%;
+  height: 120px;
+  padding-bottom: 1em;
+  background-color: #ecf0f1;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 2.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 2.5em 2.5em 1.5em 2.5em;
+  float: right;
+  margin-right: 9.25em;
+}
+footer #disclaimer {
+  clear: both;
+}
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}

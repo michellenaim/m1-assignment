@@ -27,35 +27,42 @@
       </nav>
     </div>
     </header>
-    <main>
-      <h1>Contact Us</h1>
-      <img src="images/cavachon-puppy.jpeg" alt="Cavachon puppy" width="500" />
-      <br />
-      <form action="/signup" method="post">
-        <fieldset>
-            <legend>Contact Us Form</legend>
-            <label>Enter your first name</label><br />
-            <input type="text" name="name" /><br />
-            <label>Enter your last name</label><br />
-            <input type="text" name="name" /><br />
-            <label>Enter your email</label><br />
-            <input type="email" name="email" /><br />
-            <label>Enter your phone number</label><br />
-            <input type="tel" name="phone" /><br />
-            <br />
-            <label> How would you like us to contact you?</label><br />
-            <select>
-              <option value="email">Email</option>
-              <option value="phone">Phone Number</option>
-            </select>
-            <br />
-            <br />
-            <label>What is it that you're inquiring today?</label><br />
-            <textarea cols="30" rows="4"></textarea> <br />
-            <label>Which puppy are you interested in?</label><br />
-            <textarea cols="30" rows="4"></textarea> <br />
-            <br>
-            <input type="submit" value="Contact Us" />
+    <main class="main">
+      <h2>Contact Us</h2>
+        <form action="/contact" method="post">
+          <fieldset>
+            <legend>Contact Form</legend>
+            <div class="textbox">
+              <label>First & Last Name:</label>
+              <input type="text" name="name" placeholder="Enter your first & last name here" />
+              <label>Email:</label>
+              <input type="email" name="email" placeholder="Enter your email here" />
+              <label>Phone Number:</label>
+              <input type="text" name="phone" placeholder="Enter your phone number here" />
+            </div>
+            
+            <div class="selectmenu">
+              <label> How would you like us to contact you?</label>
+              <select>
+                <option value="email">Email</option>
+                <option value="phone">Phone Number</option>
+              </select>
+            </div>
+
+            <div class="radios">
+              <label>Have you ever cared for a puppy/dog?</label>
+              <input type="radio" name="contact" value="email" checked />Yes
+              <input type="radio" name="contact" value="phone" />No
+            </div>
+
+            <div class="commentbox">
+              <label>Which puppy are you interested in?</label>
+              <textarea rows="15" cols="10"></textarea>
+            </div>
+  
+            <div class="button">
+              <input type="submit" value="Contact Us" />
+            </div>
           </fieldset>
         </form>
       </main>

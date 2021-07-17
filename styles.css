@@ -16,6 +16,11 @@ header {
   background-size: cover; /* spoke to Christopher and he suggested I added this and remove the background-size:1500px because it fits better my screen */
 }
 
+#gallery header {
+  background: no-repeat lightgrey url(images/puppy_images.png);
+  background-size: cover; /* spoke to Christopher and he suggested I added this and remove the background-size:1500px because it fits better my screen */
+}
+
 #contact header {
   background: no-repeat lightgrey url(images/bulldog.png);
   background-size: cover; /* spoke to Christopher and he suggested I added this and remove the background-size:1500px because it fits better my screen */
@@ -277,3 +282,62 @@ input[type="submit"] {
 input[type="radio"] {
   vertical-align: middle;
 }
+
+/* Gallery */
+
+main #album #pup img {
+  width: 400px;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+main {
+  margin: 50px;
+  align-items: center;
+}
+
+#caption {
+  width: 400px;
+  text-align: center;
+  color: #0c4f7d;
+  font-size: large;
+  font-weight: bold;
+  background-color: lightblue;
+  padding: 20px 0px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+#description {
+  width: 400px;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  margin-top: -279px;
+  background: #137DC5;
+  padding: 10px 0;
+  opacity: 0.7;
+  visibility: hidden;
+  font-weight: bold;
+}
+
+#album li:hover {
+  cursor: pointer;
+}
+
+#album li:hover #description {
+  visibility: visible;
+}
+
+#album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

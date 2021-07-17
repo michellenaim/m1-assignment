@@ -11,7 +11,7 @@
     />
     <title>Puppyz</title>
   </head>
-  <body id="home">
+  <body id="gallery">
     <header>
       <div class="main-header">
         <div class="logo">
@@ -28,7 +28,9 @@
       </div>
     </header>
     <main class="main">
-      
+      <h2>Gallery</h2>
+        <ul id="album">
+        </ul>
     </main>
   </body>
   <footer>
@@ -48,4 +50,32 @@
       </p>
     </div>
   </footer>
+   <script>
+    var photos = [];
+    var fileNames = [];
+    var imageList = [];
+    var image = [];
+    var caption = [];
+    var description = [];
+    var openList = "<li id='pup'>";
+    var closeList = "</li>";
+    var openCaptionTag = "<p id='caption'>";
+    var closeCaptionTag = "</p>";
+    var openDescTag = "<p id='description'>";
+    var closeDescTag = "</p>";
+
+    var captionTexts = ["Lexy", "Max", "Berta", "Dorothy", "Belle", "Ivy", "Coco", "Ella", "Felix", "Jade", "Kiwi", "Milo"]
+    var descTexts = ["Cavalier", "Dalmatian", "Golden Retriever", "Cavalier", "White Golden Retriever", "Pug", "Golden Retriever", "Poodle Mix", "Black and White", "Golden Retriever", "Golden Retriever", "Tea Cup"]
+
+    for(var i=0; i<12; i++){
+      fileNames.push('puppy-'+ (i+1));
+      photos.push("<img src='images/"+ fileNames[i]+".jpeg'>");
+      caption = openCaptionTag + captionTexts[i] + closeCaptionTag;
+      description = openDescTag + descTexts[i] + closeDescTag;
+      image = openList + photos[i] + caption + description + closeList;
+      imageList.push(image)
+    }
+
+    document.getElementById('album').innerHTML = imageList.join("")
+  </script>
 </html>

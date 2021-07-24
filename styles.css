@@ -361,7 +361,7 @@ main {
 }
 
 .information h3 {
-  margin-top: 120px;
+  margin-top: 100px;
   color: white;
   text-shadow: 2px 2px 8px #7fda73;
   font-size: xx-large;
@@ -380,4 +380,10 @@ main {
 
 #close:hover {
   color: red;
+}
+
+#dog-facts{
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
 }

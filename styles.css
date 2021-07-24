@@ -290,7 +290,7 @@ main #album #pup img {
   position: relative;
 }
 
-#gallery ul li {
+#gallery .main ul li {
   list-style-type: none;
   display: inline;
   padding: 0 20px;

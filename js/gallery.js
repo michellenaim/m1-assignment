@@ -58,7 +58,7 @@ var informationText = [
 
 for (var i = 0; i < captionTexts.length; i++) {
   fileNames.push("puppy-" + (i + 1));
-  photos.push("<img src='images/" + fileNames[i] + ".jpeg'>");
+  photos.push("<img src='images/" + fileNames[i] + ".jpeg' alt=" + captionTexts[i] + ">");
   caption = openCaptionTag + captionTexts[i] + closeCaptionTag;
   description = openDescTag + i + ")'>" +  descTexts[i] + closeDescTag;
   information = openInfoTag + closeInfoTag;
